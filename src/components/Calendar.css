@@ -1,0 +1,63 @@
+.calendar{
+  overflow: hidden;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Roboto',sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b670f4;
+  color:#fff;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+.header button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.day-names,.days{
+  display: flex;
+  flex-wrap: wrap;
+}
+.day-name,.day,.empty-day{
+  width: 14.28%;
+  padding: 10px 0px;
+  border: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.day-name{
+  background-color: #f0f0f0;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.day{
+  border: 2px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.day:hover{
+  background-color: #e0e0e0;
+}
+.empty-day{
+  border: 2px solid #f0f0f0;
+  background-color: #f9f9f9;
+}
+.today,.selected{
+  background-color: #b670f4;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
